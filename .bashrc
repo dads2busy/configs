@@ -70,6 +70,6 @@ source /usr/bin/virtualenvwrapper.sh
 export PROJECT_HOME=$HOME/Projects
 
 
-source ~/.ssh/mount_this_ssh.sh
+source ~/configs/mount_this_ssh.sh
 
 export CHROME_REMOTE_DESKTOP_DEFAULT_DESKTOP_SIZES=1440x900
