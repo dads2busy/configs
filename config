@@ -1,0 +1,33 @@
+Host *
+ServerAliveInterval 10
+ServerAliveCountMax 3
+
+Host github.com
+    IdentityFile ~/.ssh/id_rsa
+
+Host gimli
+    HostName gimli.vbi.vt.edu
+    User aschroed
+    IdentityFile ~/.ssh/id_rsa
+
+Host snowmane
+    HostName snowmane.vbi.vt.edu
+    User aschroed
+    IdentityFile ~/.ssh/id_rsa
+
+Host archking
+    HostName archking.fivehokies.com
+    User aaron
+    Port 80
+    IdentityFile ~/.ssh/id_rsa
+
+Host archmeridian
+    HostName archmeridian.fivehokies.com
+    User aaron
+    Port 22222
+    IdentityFile ~/.ssh/id_rsa
+ 
+Host sdal
+User aschroed
+HostName sdal.fivehokies.com
+IdentityFile ~/.ssh/id_rsa
