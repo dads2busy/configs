@@ -5,6 +5,9 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+alias pg='ssh -t sdal ssh 192.168.56.3'
+alias r='ssh -t sdal ssh 192.168.56.4'
+
 alias sshfsgimli='sshfs aschroed@gimli.vbi.vt.edu:/ /home/aaron/Servers/Gimli'
 alias sdal='sshfs aschroed@gimli.vbi.vt.edu:/storage/groups/vbishares/sdal /home/aaron/Servers/SDAL'
 alias sas='sshfs aschroed@snowmane.vbi.vt.edu:/home/aschroed /home/aaron/Servers/SAS'
