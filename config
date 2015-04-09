@@ -28,6 +28,6 @@ Host archmeridian
     IdentityFile ~/.ssh/id_rsa
  
 Host sdal
-User aschroed
-HostName sdal.fivehokies.com
-IdentityFile ~/.ssh/id_rsa
+    HostName sdal.fivehokies.com
+    User aschroed
+    IdentityFile ~/.ssh/id_rsa
