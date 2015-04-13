@@ -8,8 +8,8 @@
 alias l='ls -a'
 alias g='cd ~/GoogleDrive/aschroed@vt.edu/'
 
-alias pg='ssh -t sdal ssh 192.168.56.3'
-alias r='ssh -t sdal ssh 192.168.56.4'
+alias pg='autossh -M 0 -N -f pg'
+alias r='autossh -M 0 -N -f r'
 
 alias sshfsgimli='sshfs aschroed@gimli.vbi.vt.edu:/ /home/aaron/Servers/Gimli'
 alias sdal='sshfs aschroed@gimli.vbi.vt.edu:/storage/groups/vbishares/sdal /home/aaron/Servers/SDAL'
