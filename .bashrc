@@ -5,6 +5,9 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+alias l='ls -a'
+alias g='cd ~/GoogleDrive/aschroed@vt.edu/'
+
 alias pg='ssh -t sdal ssh 192.168.56.3'
 alias r='ssh -t sdal ssh 192.168.56.4'
 

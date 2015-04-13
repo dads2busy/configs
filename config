@@ -26,8 +26,28 @@ Host archmeridian
     User aaron
     Port 22222
     IdentityFile ~/.ssh/id_rsa
- 
+
 Host sdal
     HostName sdal.fivehokies.com
     User aschroed
     IdentityFile ~/.ssh/id_rsa
+
+Host transmission
+    User aaron
+    Hostname archmeridian.fivehokies.com
+    LocalForward 9091 localhost:9091
+    IdentityFile ~/.ssh/id_rsa
+    Port 22222
+
+Host r
+    User aschroed
+    Hostname sdal.fivehokies.com
+    LocalForward 8787 localhost:8787
+    IdentityFile ~/.ssh/id_rsa
+
+Host pg
+    User aschroed
+    Hostname sdal.fivehokies.com
+    LocalForward 5432 localhost:5432
+    IdentityFile ~/.ssh/id_rsa
+
