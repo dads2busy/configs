@@ -5,7 +5,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias l='ls -a'
+alias l='ls -lha --color=auto'
 alias g='cd ~/GoogleDrive/aschroed@vt.edu/'
 
 alias pg='autossh -M 0 -N -f pg'
@@ -52,9 +52,9 @@ export EDITOR="nano"
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on'
 
 # dropbox fix
-echo fs.inotify.max_user_watches=100000 | sudo tee -a /etc/sysctl.conf; 
-sudo sysctl -p
-clear
+#echo fs.inotify.max_user_watches=100000 | sudo tee -a /etc/sysctl.conf; 
+#sudo sysctl -p
+#clear
 
 # added by Anaconda 2.1.0 installer
 # export PATH="/home/aaron/anaconda/envs/py3k/bin:$PATH"

@@ -15,6 +15,12 @@ Host snowmane
     User aschroed
     IdentityFile ~/.ssh/id_rsa
 
+Host archboss
+    Hostname archboss.fivehokies.com
+    Port 80
+    User aaron
+    IdentityFile ~/.ssh/id_rsa
+
 Host archking
     HostName archking.fivehokies.com
     User aaron
