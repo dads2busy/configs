@@ -1,4 +1,4 @@
-OLDER=home_on_snowmane
+FOLDER=home_on_snowmane
 LINK=sdal
 if [[ $(df | grep $FOLDER | wc -l) -eq 0 ]]; then
   mkdir -p ~/home_on_snowmane
