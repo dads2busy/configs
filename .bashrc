@@ -8,8 +8,8 @@
 alias l='ls -lha --color=auto'
 alias g='cd ~/GoogleDrive/aschroed@vt.edu/'
 
-alias pg='autossh -M 0 -N -f pg'
-alias r='autossh -M 0 -N -f r'
+alias pg='autossh -M 0 -N -f pg_tunnel'
+alias r='autossh -M 0 -N -f r_tunnel'
 
 alias sshfsgimli='sshfs aschroed@gimli.vbi.vt.edu:/ /home/aaron/Servers/Gimli'
 alias sdal='sshfs aschroed@gimli.vbi.vt.edu:/storage/groups/vbishares/sdal /home/aaron/Servers/SDAL'

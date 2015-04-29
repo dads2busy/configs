@@ -1,19 +1,49 @@
 Host *
 ServerAliveInterval 10
 ServerAliveCountMax 3
+User aschroed
 
 Host github.com
     IdentityFile ~/.ssh/id_rsa
 
+
+# vbi servers
+
 Host gimli
     HostName gimli.vbi.vt.edu
-    User aschroed
     IdentityFile ~/.ssh/id_rsa
 
 Host snowmane
     HostName snowmane.vbi.vt.edu
-    User aschroed
     IdentityFile ~/.ssh/id_rsa
+
+
+# sdal data science servers
+
+Host sdal
+    HostName sdal.fivehokies.com
+    IdentityFile ~/.ssh/id_rsa
+
+Host sdal_r
+    ProxyCommand ssh sdal -W 192.168.56.9:22
+
+Host sdal_pg
+    ProxyCommand ssh sdal -W 192.168.56.3:22
+
+
+# ssh forwarding
+
+Host r_tunnel
+    Hostname sdal.fivehokies.com
+    LocalForward 8787 localhost:8787
+    IdentityFile ~/.ssh/id_rsa
+
+Host pg_tunnel
+    Hostname sdal.fivehokies.com
+    LocalForward 5432 localhost:5432
+    IdentityFile ~/.ssh/id_rsa
+
+# aaron
 
 Host archboss
     Hostname archboss.fivehokies.com
@@ -33,27 +63,9 @@ Host archmeridian
     Port 22222
     IdentityFile ~/.ssh/id_rsa
 
-Host sdal
-    HostName sdal.fivehokies.com
-    User aschroed
-    IdentityFile ~/.ssh/id_rsa
-
 Host transmission
     User aaron
     Hostname archmeridian.fivehokies.com
     LocalForward 9091 localhost:9091
     IdentityFile ~/.ssh/id_rsa
     Port 22222
-
-Host r
-    User aschroed
-    Hostname sdal.fivehokies.com
-    LocalForward 8787 localhost:8787
-    IdentityFile ~/.ssh/id_rsa
-
-Host pg
-    User aschroed
-    Hostname sdal.fivehokies.com
-    LocalForward 5432 localhost:5432
-    IdentityFile ~/.ssh/id_rsa
-
