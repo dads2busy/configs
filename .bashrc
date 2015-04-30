@@ -76,3 +76,5 @@ export PROJECT_HOME=$HOME/Projects
 source ~/configs/mount_this_ssh.sh
 
 export CHROME_REMOTE_DESKTOP_DEFAULT_DESKTOP_SIZES=1440x900
+
+alias lefty='xmodmap -e "pointer = 3 2 1"'
