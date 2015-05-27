@@ -1,0 +1,11 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias pg='pkill -f pg_tunnel; autossh -M 0 -N -f pg_tunnel'
+alias r='pkill -f r_tunnel; autossh -M 0 -N -f r_tunnel'
+
+PS1='[\u@\h \W]\$ '
