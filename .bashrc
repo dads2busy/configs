@@ -8,8 +8,25 @@
 alias l='ls -lha --color=auto'
 alias g='cd ~/GoogleDrive/aschroed@vt.edu/'
 
-alias pg='autossh -M 0 -N -f pg_tunnel'
-alias r='autossh -M 0 -N -f r_tunnel'
+function rs {
+    OS=$(uname -s)
+    if [[ $OS == 'Linux' ]]; then
+        pkill -f r_tunnel; autossh -M 0 -N -f r_tunnel && echo "rstudio tunnel created" && xdg-open http://localhost:8787/;
+    fi
+    if [[ $OS == 'Darwin' ]]; then
+        pkill -f r_tunnel; autossh -M 0 -N -f r_tunnel && echo "rstudio tunnel created" && open -a "/Applications/Google Chrome.app" 'http://localhost:8787/';
+    fi
+}
+
+function pg {
+    OS=$(uname -s)
+    if [[ $OS == 'Linux' ]]; then
+        pkill -f pg_tunnel; autossh -M 0 -N -f pg_tunnel && echo "postgresql tunnel created" && `nohup sh -c 'pgadmin3' > /dev/null &`;
+    fi
+    if [[ $OS == 'Darwin' ]]; then
+        pkill -f pg_tunnel; autossh -M 0 -N -f pg_tunnel && echo "postgresql tunnel created" && `open -a pgadmin3`;
+    fi
+}
 
 alias sshfsgimli='sshfs aschroed@gimli.vbi.vt.edu:/ /home/aaron/Servers/Gimli'
 alias sdal='sshfs aschroed@gimli.vbi.vt.edu:/storage/groups/vbishares/sdal /home/aaron/Servers/SDAL'
