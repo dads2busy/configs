@@ -1,0 +1,6 @@
+alias l='ls -lha --color=auto'
+alias ls='ls --color=auto'
+alias ls='ls -lh --group-directories-first --color=auto'
+alias lsa='ls -lh --group-directories-first --color=auto && ls -dlh .* --group-directories-first --color=auto'
+alias ls.='ls -dlh .* --group-directories-first --color=auto'
+

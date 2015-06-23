@@ -1,0 +1,14 @@
+if [ -L ~/.bash_profile ]; then
+  unlink ~/.bash_profile
+fi
+ln -s ~/configs/bash_profile ~/.bash_profile
+
+if [ -L ~/.bashrc ]; then
+  unlink ~/.bashrc
+fi
+ln -s ~/configs/bashrc ~/.bashrc
+
+if [ -L ~/.ssh/config ]; then
+  unlink ~/.ssh/config
+fi
+ln -s ~/configs/config ~/.ssh/config

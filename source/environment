@@ -1,0 +1,7 @@
+export EDITOR="nano"
+export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on'
+export CHROME_REMOTE_DESKTOP_DEFAULT_DESKTOP_SIZES=1440x900
+PATH=$PATH:/home/aaron/.gem/ruby/2.2.0/bin
+PS1='[\u@\h \W]\$ '
+alias g='cd ~/GoogleDrive/aschroed@vt.edu/'
+alias p='cd ~/GoogleDrive/aschroed@vt.edu/Projects/'

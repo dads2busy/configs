@@ -1,11 +1,10 @@
 Host *
-ServerAliveInterval 10
-ServerAliveCountMax 3
-User aschroed
+    ServerAliveInterval 10
+    ServerAliveCountMax 3
+    User aschroed
 
 Host github.com
     IdentityFile ~/.ssh/id_rsa
-
 
 # vbi servers
 
@@ -16,7 +15,6 @@ Host gimli
 Host snowmane
     HostName snowmane.vbi.vt.edu
     IdentityFile ~/.ssh/id_rsa
-
 
 # sdal data science servers
 
@@ -45,29 +43,3 @@ Host pg_tunnel
     LocalForward 5432 localhost:5432
     IdentityFile ~/.ssh/id_rsa
 
-# aaron
-
-Host archboss
-    Hostname archboss.fivehokies.com
-    Port 80
-    User aaron
-    IdentityFile ~/.ssh/id_rsa
-
-Host archking
-    HostName archking.fivehokies.com
-    User aaron
-    Port 80
-    IdentityFile ~/.ssh/id_rsa
-
-Host archmeridian
-    HostName archmeridian.fivehokies.com
-    User aaron
-    Port 22222
-    IdentityFile ~/.ssh/id_rsa
-
-Host transmission
-    User aaron
-    Hostname archmeridian.fivehokies.com
-    LocalForward 9091 localhost:9091
-    IdentityFile ~/.ssh/id_rsa
-    Port 22222

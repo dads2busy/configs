@@ -1,0 +1,3 @@
+alias vtvpn='/opt/java32/jre/bin/java -cp /home/aaron/.juniper_networks/NC.jar NC -h ras.cns.vt.edu -u aschroed -f
+/home/aaron/.juniper_networks/network_connect/config/ras.cns.vt.edu.der -L 3 -r RemoteAccessUsers -U
+"https://ras.cns.vt.edu/"'

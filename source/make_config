@@ -1,0 +1,1 @@
+cat ~/configs/config_sdal ~/configs/config_local > ~/configs/config
